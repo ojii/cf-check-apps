@@ -13,7 +13,7 @@ INSTALL_REQUIRES = [
 
 setup(
     name='cf-check-apps',
-    version='1.0',
+    version='1.1',
     description='Check the status of your CloudFoundry apps',
     author='Jonas Obrist',
     author_email='ojiidotch@gmail.com',

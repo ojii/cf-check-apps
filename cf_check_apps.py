@@ -31,8 +31,8 @@ def get_token(host):
         'Content-Type': 'application/json',
         'Accept': 'application/json',
     }
-    data = json.dumps({'password': password})
-    response = requests.post('%s/users/%s/tokens' % (host, username), data=data, headers=headers)
+    post_data = json.dumps({'password': password})
+    response = requests.post('%s/users/%s/tokens' % (host, username), data=post_data, headers=headers)
     if response.ok:
         token = response.json['token']
     else:
